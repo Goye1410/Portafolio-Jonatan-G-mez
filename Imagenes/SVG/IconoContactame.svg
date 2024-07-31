@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.1 31.46">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fcfcfc;
+        font-family: RevxNeueDemo-SemiBold, 'Revx Neue Demo';
+        font-size: 8.12px;
+        font-weight: 600;
+      }
+
+      .cls-2 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        letter-spacing: -.04em;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <rect class="cls-3" width="90.1" height="31.46"/>
+    <text class="cls-1" transform="translate(40.98 18.37)"><tspan x="0" y="0">CON</tspan><tspan class="cls-2" x="15.16" y="0">T</tspan><tspan x="19.05" y="0">AC</tspan><tspan class="cls-5" x="28.99" y="0">T</tspan><tspan x="32.88" y="0">AME</tspan></text>
+    <g>
+      <path class="cls-4" d="m26.44,6.8H2.99c-.31,0-.56.25-.56.56v16.75c0,.31.25.56.56.56h23.45c.31,0,.56-.25.56-.56V7.36c0-.31-.25-.56-.56-.56Zm-.56,15.4l-6.92-6.92-.79.79,7.48,7.48H3.77l7.48-7.48-.79-.79-6.92,6.92V7.91h22.34v14.28Z"/>
+      <path class="cls-4" d="m24.75,7.91l-10.04,10.04L4.67,7.91h-1.13v.45l10.77,10.77c.22.22.57.22.79,0l10.77-10.77v-.45h-1.13Z"/>
+    </g>
+  </g>
+</svg>

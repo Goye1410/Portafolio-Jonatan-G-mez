@@ -1,0 +1,350 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+
+.montserrat{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:200;
+  font-style: normal;
+}
+
+body{
+    background-image: url("Imagenes/SVG/Fondo.svg");
+    background-size: cover; /* Hace que la imagen ocupe todo el espacio disponible */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: auto; /* Asegura que el cuerpo del documento ocupe toda la altura de la ventana */
+    margin: 0; /* Elimina el margen por defecto del body */
+}
+
+
+
+.barraNav {
+    position: relative; /* Necesario para que funcione el z-index */
+    z-index: 1; /* Nivel por defecto */
+  }
+  
+  .barraNavBotonLogo{
+    width: 4%;
+    position: absolute; /* Permite el uso de z-index */
+  top: 14%;
+  left:8%; 
+  z-index: 2;
+}
+
+
+
+
+
+
+.barraNavBotonContactame{
+    width: 8%;
+    position: absolute; /* Permite el uso de z-index */
+  top: 35%;
+  right:8%; 
+  z-index: 2;
+}
+
+.barraNavBotonMiBlog{
+    width: 8%;
+    position: absolute; /* Permite el uso de z-index */
+  top: 35%;
+  right:20%; 
+  z-index: 2;
+}
+
+.barraNavBotonMisProyectos{
+    width: 8%;
+    position: absolute; /* Permite el uso de z-index */
+  top: 35%;
+  right:32%; 
+  z-index: 2;
+}
+
+.barraNavBotonQuienSoy{
+    width: 8%;
+    position: absolute; /* Permite el uso de z-index */
+  top: 35%;
+  right:44%; 
+  z-index: 2;
+}
+
+.barraNavBotonMenuHamburguesa{
+  width: 8%;
+  position: absolute; /* Permite el uso de z-index */
+  top: 20%;
+  right:8%; 
+  z-index: 2;
+  cursor: pointer;
+}
+
+.TextoBienvenida{
+  padding-top: 6%;
+  padding-left: 8%;
+}
+
+.TextoBienvenida:hover{
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  }
+  
+  .barraNavBotonLogo:hover,
+  .barraNavBotonContactame:hover,
+  .barraNavBotonMiBlog:hover,
+  .barraNavBotonMisProyectos:hover,
+  .barraNavBotonQuienSoy:hover{
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+  }
+  
+  .imagenHome1:hover,
+  .imagenHome2:hover,
+  .imagenHome3:hover{
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+  }
+
+
+#carouselExample{
+  margin-top: 6%;
+  float: right;
+  margin-right: 8%;
+  border: 5px solid #00C129;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: green; /* Cambia este color al que prefieras */
+  border-radius: 100%;
+}
+
+.textos2{
+  color: white;
+  padding-top: 10%;
+left: 50%;
+}
+.text-center{
+  color: white;
+
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.imagenHome1, .imagenHome2, .imagenHome3{
+  width: 20%;
+}
+
+
+.imagenes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.imagenHome1{
+  margin-right: 8%;
+}
+
+.imagenHome3{
+  margin-left: 8%;
+}
+
+.footer{
+  margin-top: 8%;
+}
+
+.footer{
+  position: relative;
+  z-index: 1;
+}
+
+
+.botonFooterWhatsapp{
+  width: 7%;
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  left:8%; 
+ 
+}
+.botonFooterWhatsapp:hover{
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+.botonFooterCorreo{
+  width: 16%;
+  position: absolute;
+  z-index: 2;
+  top: 20%;
+  left:27.5%; 
+}
+
+.botonFooterGitHub{
+  width: 19%;
+  position: absolute;
+  z-index: 2;
+  top: 13%;
+  right:26.5%; 
+}
+
+.botonFooterInstagram{
+  width: 9%;
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  right:8%; 
+}
+
+.menu-container {
+    position: relative;
+}
+
+
+.menu-toggle {
+    display: none;
+    
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 60%; /* Ajusta según sea necesario */
+    right: 0;
+    background-color: #007F18;
+    border: 2px solid #00C129;
+    box-shadow: 0 4px 8px #003f0c;
+    z-index: 1;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    padding: 10px;
+}
+
+.menu ul li a {
+    display: block;
+}
+
+.menu ul li a img{
+width: 60%;
+margin-left: 17%;
+}
+
+.menu ul li a:hover {
+    background-color: #005810;
+}
+
+.menu-toggle:checked + label + .menu {
+    display: block;
+}
+
+@media(min-width:576px) and (max-width:6400px) {
+
+  
+
+  .barraNavVCelu, .barraNavBotonMenuHamburguesa,.barraNavCeluDesplegable,.piedepaginaCelu,.botonFooterWhatsappCelu,.botonFooterCorreoCelu,.botonFooterGitHubCelu,.botonFooterInstagramCelu{
+      display: none;
+  }
+
+}
+
+@media (max-width: 576px) {
+.barraNavBotonContactame, .barraNavBotonMiBlog,.barraNavBotonMisProyectos, .barraNavBotonQuienSoy, .piedepagina, .botonFooterCorreo, .botonFooterGitHub,.botonFooterInstagram,.botonFooterWhatsapp{
+display: none;
+}
+.barraNavV{
+  display: none;
+}
+
+.barraNavBotonLogo{
+  width: 10%;
+margin-top: -2%;
+}
+  .TextoBienvenida{
+    width: 90%;
+    padding-top: 15%;
+    margin-left: 0%;
+ 
+  }
+
+  #carouselExample{
+    width: 90%;
+    margin-top: 10%;
+    margin-right:5%;
+    margin-bottom: 10%;
+  }
+ .text-center{
+  margin-top: 80%;
+ }
+
+  .imagenes {
+    flex-direction: column;
+  }
+
+  .imagenHome1, .imagenHome2, .imagenHome3 {
+    width: 70%;
+  }
+
+  .imagenHome1 {
+    margin-right: 0;
+    margin-top: 15%;
+  }
+  .imagenHome2 {
+    margin-right: 0;
+    margin-top: 15%;
+  }
+  .imagenHome3 {
+    margin-left: 0;
+    margin-top: 15%;
+  }
+
+ 
+  .botonFooterWhatsappCelu{
+    width: 10%;
+    position: absolute;
+    z-index: 2;
+    top: 30%;
+    left:8%; 
+  }
+  
+  .botonFooterCorreoCelu{
+    width: 10%;
+    position: absolute;
+    z-index: 2;
+    top: 38%;
+    left:32%; 
+  }
+  
+  .botonFooterGitHubCelu{
+    width: 10%;
+    position: absolute;
+    z-index: 2;
+    top: 30%;
+    right:32%; 
+  }
+  
+  .botonFooterInstagramCelu{
+    width: 10%;
+    position: absolute;
+    z-index: 2;
+    top: 30%;
+    right:8%; 
+  }
+
+  
+
+}
