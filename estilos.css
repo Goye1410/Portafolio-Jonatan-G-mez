@@ -153,6 +153,13 @@ background-color: green; /* Cambia este color al que prefieras */
 border-radius: 100%;
 }
 
+.prev1,
+.next1 {
+background-color: green; /* Cambia este color al que prefieras */
+border-radius: 100%;
+}
+
+
 
 .textos2{
 color: white;
@@ -340,7 +347,35 @@ margin-left: 17%;
     border: 5px solid #00C129;
     width: 80%;
     }
+    #carouselExample4{
+      border: 5px solid #00C129;
+      width: 80%;
+      }
+      #carouselExample5{
+        border: 5px solid #00C129;
+        width: 80%;
+        }
+        #carouselExample6{
+          border: 5px solid #00C129;
+          width: 80%;
+          }
+          #carouselExample7{
+            border: 5px solid #00C129;
+            width: 80%;
+            }
+            #carouselExample8{
+              border: 5px solid #00C129;
+              width: 80%;
+              }
 
+              #carouselExample9{
+                border: 5px solid #00C129;
+                width: 80%;
+                }
+
+                #carouselExample11, #carouselExample22, #carouselExample33, #carouselExample44, #carouselExample55{
+                  width: 80%;
+                }
     
   
 
@@ -453,6 +488,27 @@ margin-top: -2%;
   margin-right:5%;
   margin-bottom: 10%;
 }
+
+#carouselExample1, #carouselExample2, #carouselExample3, #carouselExample4, #carouselExample5, #carouselExample6, #carouselExample7, #carouselExample8, #carouselExample9{
+  width: 115%;
+  margin-right:0;
+}
+#carouselExample11, #carouselExample22, #carouselExample33, #carouselExample44, #carouselExample55{
+  width: 100%;
+  margin-right:0;
+}
+
+
+.prev1 {
+margin-left: -100%;
+}
+.next1{
+margin-right: -100%;
+}
+
+.closeproyecto1 {
+  top: -10%;
+}
 .text-center{
 margin-top: 80%;
 }
@@ -507,8 +563,7 @@ margin-top: 80%;
 
 
 .close {
-  top: -22%;
-  right: 45%;
+  top: -10%;
 }
 
 }
@@ -563,32 +618,7 @@ margin-top: 80%;
       }
 
 
-      #carouselExample4{
-        border: 5px solid #00C129;
-        width: 80%;
-        }
-        #carouselExample5{
-          border: 5px solid #00C129;
-          width: 80%;
-          }
-          #carouselExample6{
-            border: 5px solid #00C129;
-            width: 80%;
-            }
-            #carouselExample7{
-              border: 5px solid #00C129;
-              width: 80%;
-              }
-              #carouselExample8{
-                border: 5px solid #00C129;
-                width: 80%;
-                }
-
-                #carouselExample9{
-                  border: 5px solid #00C129;
-                  width: 80%;
-                  }
-
+  
 
 @media (max-width: 576px) {
   .conocemitrabajo{
@@ -618,9 +648,7 @@ width: 50%;
   margin-top: 20%;
 }
 
-#carouselExample11, #carouselExample22, #carouselExample33, #carouselExample44, #carouselExample55{
-  width: 80%;
-}
+
 
 @media (max-width: 576px) {
   .bienvenidoblog{
