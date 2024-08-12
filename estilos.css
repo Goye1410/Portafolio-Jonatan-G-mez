@@ -12,7 +12,33 @@ body{
   margin: 0; /* Elimina el margen por defecto del body */
 }
 
+.controlvoz{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7%;
+  color: white;
+}
 
+
+
+.botonvozverde{
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 4%;
+  z-index: 1000;
+  cursor: pointer;
+}
+.mensaje{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#status{
+  color: white;
+  margin-top: 2%;
+}
 
 .montserrat{
 font-family: "Montserrat", sans-serif;
@@ -21,7 +47,57 @@ font-weight:200;
 font-style: normal;
 }
 
+.audio{
+  margin-top: -18%;
+}
 
+#iconreproducir{
+  color: rgb(138, 138, 138);
+ font-size: 5vw;
+ justify-content: center;
+ display: flex;
+ z-index: 9;
+ margin-left: 42%;
+ cursor: pointer;
+ padding-bottom: 4%;
+ }
+
+
+
+
+#iconreiniciar{
+  color: rgb(138, 138, 138);
+  font-size: 5vw;
+  justify-content: center;
+  display: flex;
+  z-index: 9;
+  margin-left: 48%;
+  cursor: pointer;
+}
+.audiocel{
+  margin-top: 10%;
+}
+
+#iconreproducircel{
+color: rgb(138, 138, 138);
+ font-size: 15vw;
+ margin-left: 22%;
+ cursor: pointer;
+ padding-bottom: 4%;
+ }
+
+
+#iconreiniciarcel{
+  color: rgb(138, 138, 138);
+  font-size: 15vw;
+  margin-left: 20%;
+  cursor: pointer;
+}
+
+
+#audioElement {
+  display: none;
+}
 
 
 .barraNav {
@@ -163,7 +239,8 @@ border-radius: 100%;
 
 .textos2{
 color: white;
-padding-top: 10%;
+padding-top: 15%;
+padding-bottom: -5%;
 left: 50%;
 }
 .text-center{
@@ -426,8 +503,51 @@ margin-left: 17%;
   color: #005810;
 }
 
+.mapa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textomapa{
+  color: white;
+  text-align: center;
+ padding-top: 20%;
+}
+
+
+
+#map {
+  margin-top: 10%; /* Ajusta el margen superior según la altura de la barra de navegación */
+  height: 400px; /* Altura del mapa */
+  width: 90%;   /* Ancho del mapa */
+  border: 7px solid #00C129;
+  z-index: 0;
+}
+
+#coordinates {
+  margin-top: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.botonmapa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#get-coordinates-button {
+  width: 30%;
+  margin-top: 5%;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+
+
 @media(min-width:576px) and (max-width:6400px) {
-.barraNavVCelu, .barraNavBotonMenuHamburguesa,.barraNavCeluDesplegable,.piedepaginaCelu,.botonFooterWhatsappCelu,.botonFooterCorreoCelu,.botonFooterGitHubCelu,.botonFooterInstagramCelu{
+.barraNavVCelu, .barraNavBotonMenuHamburguesa,.barraNavCeluDesplegable,.piedepaginaCelu,.botonFooterWhatsappCelu,.botonFooterCorreoCelu,.botonFooterGitHubCelu,.botonFooterInstagramCelu,.audiocel{
     display: none;
 }
 }
@@ -451,7 +571,7 @@ margin-left: 17%;
 }
 
 @media (max-width: 576px) {
-.barraNavBotonContactame, .barraNavBotonMiBlog,.barraNavBotonMisProyectos, .barraNavBotonQuienSoy, .piedepagina, .botonFooterCorreo, .botonFooterGitHub,.botonFooterInstagram,.botonFooterWhatsapp{
+.barraNavBotonContactame, .barraNavBotonMiBlog,.barraNavBotonMisProyectos, .barraNavBotonQuienSoy, .piedepagina, .botonFooterCorreo, .botonFooterGitHub,.botonFooterInstagram,.botonFooterWhatsapp,.audio{
 display: none;
 }
 .barraNavV{
@@ -481,13 +601,24 @@ margin-top: -2%;
   margin-bottom: 10%;
 }
 
+.audio{
+  margin-top: -15%;
+}
 
+#iconreproducir{
+  margin-left:5%;
+  font-size: 15vw;
+}
 #carouselExample{
   width: 90%;
-  margin-top: 17%;
+  margin-top: 5%;
   margin-right:5%;
   margin-bottom: 10%;
 }
+.textos2{
+  margin-top: -15%;
+}
+
 
 #carouselExample1, #carouselExample2, #carouselExample3, #carouselExample4, #carouselExample5, #carouselExample6, #carouselExample7, #carouselExample8, #carouselExample9{
   width: 115%;
@@ -566,6 +697,12 @@ margin-top: 80%;
   top: -10%;
 }
 
+.botonvozverde{
+  width: 10%;
+}
+#get-coordinates-button {
+  width: 50%;
+}
 }
 
 

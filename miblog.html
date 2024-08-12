@@ -25,7 +25,7 @@
     
           <a href="index.html"><img class="animate__heartBeat barraNavBotonLogo" src="Imagenes/BotonLogo.png" alt=""> </a>
     
-         <a href="#piedepagina"> <img class="animate__heartBeat barraNavBotonContactame" src="Imagenes/SVG/BotonContactame.svg" alt=""></a>
+         <a href="contactame.html"> <img class="animate__heartBeat barraNavBotonContactame" src="Imagenes/SVG/BotonContactame.svg" alt=""></a>
           <a href="#"> <img class="animate__heartBeat barraNavBotonMiBlog" src="Imagenes/SVG/BotonMiBlog.svg" alt=""> </a>
           <a href="misproyectos.html"><img class="animate__heartBeat barraNavBotonMisProyectos" src="Imagenes/SVG/BotonMisProyectos.svg" alt=""></a>
           <a href="quiensoy.html"><img class="animate__heartBeat barraNavBotonQuienSoy" src="Imagenes/SVG/BotonQuienSoy.svg" alt=""> </a>
@@ -41,7 +41,7 @@
                   <li><a href="quiensoy.html"><img class="iconoquiensoy" src="Imagenes/SVG/IconoQuienSoy.svg"></a></li>
                   <li><a href="misproyectos.html"><img class="iconomisproyectos" src="Imagenes/SVG/IconoMisProyectos.svg"></a></li>
                   <li><a href="#"><img class="iconomiblog" src="Imagenes/SVG/IconoMiBlog.svg"></a></li>
-                  <li><a href="#piedepagina"><img class="iconocontactame" src="Imagenes/SVG/IconoContactame.svg"></a></li>
+                  <li><a href="contactame.html"><img class="iconocontactame" src="Imagenes/SVG/IconoContactame.svg"></a></li>
                 </ul>
           </nav>
         </div>  
@@ -283,4 +283,64 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </footer>
+  <div class="botonvoz">
+    <img id="start-recognition" class="botonvozverde" src="Imagenes/SVG/iconomicrofono_1.svg" alt="">
+    </div>
   </body>
+</html>
+
+<script>
+  /*   comandos de voz */
+  
+    document.getElementById('start-recognition').addEventListener('click', () => {
+  const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+  recognition.lang = 'es-ES';
+  recognition.interimResults = false;
+  recognition.maxAlternatives = 1;
+  
+  recognition.onresult = (event) => {
+    const command = event.results[0][0].transcript.toLowerCase();
+    const status = document.getElementById('status');
+  
+    if (command.includes('inicio')) {
+    window.location.href = 'index.html';
+    status.textContent = 'Abriendo inicio';
+}
+else if (command.includes('home')) {
+    window.location.href = 'index.html';
+    status.textContent = 'Abriendo home';
+} 
+
+else if (command.includes('proyectos')) {
+    window.location.href = 'misproyectos.html';
+    status.textContent = 'Abriendo proyectos';
+} 
+else if (command.includes('soy')) {
+    window.location.href = 'quiensoy.html';
+    status.textContent = 'Abriendo quien soy';
+} 
+else if (command.includes('contactame')) {
+    window.location.href = 'contactame.html';
+    status.textContent = 'Abriendo contactame';
+} 
+else if (command.includes('contactar')) {
+    window.location.href = 'contactame.html';
+    status.textContent = 'Abriendo contactame';
+} 
+else if (command.includes('contacto')) {
+    window.location.href = 'contactame.html';
+    status.textContent = 'Abriendo contactame';
+} 
+else {
+    status.textContent = 'Comando no reconocido';
+}
+  
+  };
+  
+  recognition.onerror = (event) => {
+    console.error('Error en el reconocimiento de voz:', event.error);
+  };
+  
+  recognition.start();
+  });
+  </script>
