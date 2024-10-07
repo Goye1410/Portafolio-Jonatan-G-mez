@@ -544,6 +544,84 @@ margin-left: 17%;
 }
 
 
+/* Personaje */
+.TextoPersonaje{
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding-top: 4%;
+}
+
+.contenidoPersonaje{
+  padding-top: 11%;
+  background-color: black;
+}
+
+.seccion1 {
+  display: flex;
+  border-bottom: 2px solid white;
+}
+
+.tituloMiPersonaje{
+  width: 100%;
+  margin-left: 5%;
+  margin-top: 20%;
+  }
+.parrafoseccion1{
+  color: white;
+  text-align: justify;
+  margin-left: 6%;
+  margin-top: 4%;
+  font-size: 2vw;
+}
+  .Personajeseccion1{
+    width: 50%;
+  }
+
+/* Sección 2 */
+.seccion2 {
+  border-bottom: 2px solid white;
+  padding: 20px; /* Opcional, para dar espacio alrededor */
+}
+
+.LogoHope {
+  width: 15%;
+  margin-left: 7%;
+}
+
+.CabezaPersonaje {
+  width: 20%;
+  margin-left: 10%;
+}
+
+.TorsoPersonaje {
+  width: 30%;
+  margin-left: 10%;
+}
+
+
+
+/* Sección 3 */
+.seccion3 {
+  background-color: #5733FF; /* Color púrpura */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Sección 4 */
+.seccion4 {
+  background-color: #FFD700; /* Color dorado */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  color: white;
+  font-size: 2em;
+}
+
 
 
 @media(min-width:576px) and (max-width:6400px) {
